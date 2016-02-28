@@ -1,0 +1,84 @@
+<div class="right_pannel_content_left">
+<!-- dutyinfo -->
+	<div>{{}}</div>
+	<div class="dutyinfo">
+		<div class="dateinfo">
+			<span><img src="img/iconfont-circle.png" alt=""></span><span class="period">{{period}}</span><div class="riqi">{{today | date:'yyyy/MM/dd'}}</div><span class="up">上</span>
+		</div>
+		<div class="detailinfo clearfix">
+
+			<div class="left">
+				<div class="time">{{today | date: 'HH:mm'}}</div>
+				<div class="wrapper">
+				<div class="week">19周</div>
+				<div class="day">星期三</div>
+				</div>
+				<div class="button sign">
+					签到
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="nextturn clearfix">
+					<span class="itemleft ">下一班：</span>
+					<span class="itemright">南小鸟</span>
+				</div>
+				<div class="number clearfix">
+					<span class="itemleft">电话</span>
+					<span class="itemright">13055356526</span>
+				</div>
+				<div class="qq clearfix">
+					<span class="itemleft">qq</span>
+					<span class="itemright">1747860299</span>
+				</div>
+				<div class="button contact">通知</div>
+			</div>
+
+		</div>
+	</div>
+<!-- dutyrule -->
+	<div class="dutyrule">
+		<div class="headder">
+		<div>值班守则<span class="up">上</span></div>
+		</div>
+		<div class="content">
+			<ol>
+				<li>上课时间若有改动，请立即<strong>更新课表</strong>或<strong>告知办公室</strong>；</li>
+				<li>值班人员须烧水，通风，打扫卫生，清理垃圾筒；</li>
+				<li>值班期间须登陆中心QQ、飞信，礼貌接待来宾，接 听中心电话，做好值班记录；</li>
+				<li>请值班人员严格遵守值班时间，妥善保管并交接值班钥匙；</li>
+			</ol>
+		</div>
+	</div>
+<!-- dutylog -->
+	<div class="dutylog">
+		<div class="headder">
+			<div class="div">值班日志
+				<span class="up">上</span>
+				<div class="tooltip">
+					<div class="subhead">日志模板</div>
+					<div class="subcontent">
+						<span>值班记录<br></span>
+						<p>烧水、通风、打扫卫生、倾倒垃圾、开服务器。登陆qq，加化学学院学生会为好友。接听中心电话：闫导找人修电脑。</p>
+						<span>其他事项</span>
+						<p>学工部老师借3米网线一根，未归还。起晚了，迟到半小时。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="workreport">
+			<div class="head">值班记录</div>
+			<textarea placeholder="今天都做了啥？"></textarea>
+			<div class="head">其他事项</div>
+			<textarea class="otherthing" placeholder="中心物品借/还，值班迟到/早退情况……"></textarea>
+		</div>
+		<div class="container">
+			<div class="wrapper">
+				<div class="button save">保存</div>
+			</div>
+			<div class="wrapper">
+				<div class="button cancel">取消</div>
+			</div>
+		</div>
+	</div>
+</div>
