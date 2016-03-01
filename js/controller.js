@@ -1,8 +1,8 @@
 /**
 controller.js 定义控制器的部分
 */
-angular.module('myApp.controller', [])
-.controller('consoleleftCtrl', ['$scope','$timeout', function($scope,$timeout) {
+angular.module('myApp.controller', ['ngAnimate'])
+.controller('consoleleftCtrl', ['$scope','$timeout','$http', function($scope,$timeout,$http) {
 	// 获取当前时刻
 	var updateClock = function() {
 		$scope.today = new Date();
@@ -26,4 +26,22 @@ angular.module('myApp.controller', [])
 		}
 	}
 	updatePeriod();
+	// 得到下次值班的信息
+	var getNextTurn = function() {
+		$http({
+			method: 'GET',
+			url:"data/nextturn.json"
+		}).success(function(data,status,headers,config){
+			$scope.nextturn = data;
+		}).error(function(data,status,headers,config){
+			$scope.nextturn = {
+				next:"加载出了点问题呦...",
+				number: "反正不是110",
+				qq: "刷新页面吧"
+			}
+		});
+	}
+	getNextTurn();
+	
+
 }])

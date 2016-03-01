@@ -8,7 +8,7 @@ window.onload = function() {
 	menuActive(".right_menu li");
 	hideInfo(".dateinfo .up",".detailinfo");
 	hideInfo(".dutyrule .up",".dutyrule .content");
-	changenavMenu();
+	// changenavMenu();
 	tooltipToggle();
 }
 // 导航栏的效果
@@ -18,19 +18,19 @@ function menuActive(target) {
 		$(e.currentTarget).addClass("active");
 	});
 }
-function changenavMenu() {
-	var i = 0;
-	$(".dutyrule .up").click(function() {
-		if(i%2 == 0) {
-			$(".left_menu").addClass("left_menu_long");
-		}
-		else {
-			$(".left_menu").removeClass("left_menu_long");
-		}
-		i++;
-		// console.log(i);
-	})
-}
+// function changenavMenu() {
+// 	var i = 0;
+// 	$(".dutyrule .up").click(function() {
+// 		if(i%2 == 0) {
+// 			$(".left_menu").addClass("left_menu_long");
+// 		}
+// 		else {
+// 			$(".left_menu").removeClass("left_menu_long");
+// 		}
+// 		i++;
+// 		// console.log(i);
+// 	})
+// }
 // tooltip 滑动出现
 function tooltipToggle() {
 	var i = 0;
@@ -50,3 +50,20 @@ function hideInfo(clickTarget,animateTarget){
 		$(animateTarget).slideToggle("slow");
 	})
 }
+
+new Morris.Donut(
+{
+	element: 'myfirstchart',
+	data: [
+	  {value: 25, label: '请假'},
+	  {value: 75, label: '值班'}
+	],
+	backgroundColor: '#fff',
+	labelColor: '#060',
+	colors: [
+	  '#ff6666',
+	  '#21b69e'
+	],
+	formatter: function (x) { return x + "%"}
+}
+)

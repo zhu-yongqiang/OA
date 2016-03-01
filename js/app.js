@@ -20,10 +20,13 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     		'console@console' : {
     			templateUrl : 'tpl/duty/console.html'
     		},
-    		'consoleleft@console' : {
-    			templateUrl : 'tpl/duty/consoleleft.html',
+    		'dutyboardleft@console' : {
+    			templateUrl : 'tpl/duty/dutyboardleft.html',
                 controller: "consoleleftCtrl"
-    		}
+    		},
+            'dutyboardright@console' : {
+                // templateUrl : 'tpl/duty/dutyboardright.html'
+            }
     	}
     })
     .state('home',{
@@ -31,6 +34,8 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
         template: '<h2>,World</h2>'
     })
 }]);
+
+
 // myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
 //     $urlRouterProvider.otherwise('/');
 //     $stateProvider.state('index',{

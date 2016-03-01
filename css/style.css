@@ -17,6 +17,8 @@ v0.0.1 此版本只是用于完成基本的效果，对于响应式，浏览器�
 }
 .left_menu {
 	float: left;
+	height: 100%;
+	position: fixed;
 }
 .left_menu ul {
 	margin: 0;
@@ -105,6 +107,7 @@ v0.0.1 此版本只是用于完成基本的效果，对于响应式，浏览器�
 .right_pannel_content_left {
 	width: 500px;
 	margin: 20px;
+	float: left;
 }
 .right_pannel_content_left .dateinfo {
 	background-color: #313c43;
@@ -337,4 +340,88 @@ v0.0.1 此版本只是用于完成基本的效果，对于响应式，浏览器�
 .dutylog .container {
 	padding-bottom: 15px;
 }
+.dutyboardleft {
+	float: left;
+}
+.dutyboardright {
+	width: calc(100% - 540px);
+	float: right;
+}
+.dutyboardright .calendar {
+	margin-bottom: 10px;
+}
+.dutyboardright .calendar_header,.dutyboardright .statistics_headder{
+	width: 100%;
+	background-color: #313c43;
+	margin-top: 20px;
+	line-height: 40px;
+	color: #fff;
+	// padding-left: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	// position: relative;
+}
+.dutyboardright .calendar_header .month {
+	margin-left: 20px;
+}
+.dutyboardright .calendar_header .up {
+	position: absolute;
+	left: calc(100% - 30px);
+}
+.dutyboardright .tabel {
+	width: 100%;
+}
+.dutyboardright .tabel .week{
+	border: 0.05em solid #eee;
+	width: 4.545%;
+	height: 220px;
+	float:left;
+	background-color: #fff;
+	border-top:none;
+	text-align: center;
+	font-size: 1em;
+	letter-spacing: 1.5px;
+}
+.dutyboardright .tabel .week span {
+	position: relative;
+	top: 82px;
+}
+.dutyboardright .tabel .weekday {
+	width: 13.434%;
+	height: 220px;
+	float:left;
+	border: 0.05em solid #eee;
+	border-left: none;
+	background-color: #fff;
+	border-top:none;
+	font-size: 1em;
+	text-align: center;
+	color: #d0d0d0;
+}
+.dutyboardright .tabel .weekday .exact {
+	position: relative;
+	top: 5px;
+}
+.dutyboardright .tabel .weekday span {
+	position: relative;
+	top: 5px;
+}
+.dutyboardright .second .week,.dutyboardright .second .weekday {
+	height: 205px;
+}
+.dutyboardright .second .weekday span {
+	position: relative;
+	top: 10px;
+}
+.dutyboardright .statistics_headder span {
+	margin-left: 20px;
+}
+
+.dutyboardright .statistics .charts {
+	height: 155px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+
+
 
