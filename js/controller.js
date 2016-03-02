@@ -1,7 +1,7 @@
 /**
 controller.js 定义控制器的部分
 */
-angular.module('myApp.controller', ['ngAnimate'])
+angular.module('myApp.controllers', ['ngAnimate'])
 .controller('consoleleftCtrl', ['$scope','$timeout','$http', function($scope,$timeout,$http) {
 	// 获取当前时刻
 	var updateClock = function() {

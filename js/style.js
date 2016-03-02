@@ -3,13 +3,13 @@
 */
 window.onload = function() {
 	menuActive(".left_menu li");
-	$(".dutyrule .content").hide();
-	$(".dutylog .tooltip").hide();
+	// $(".dutyrule .content").hide();
+	// $(".dutylog .tooltip").hide();
 	menuActive(".right_menu li");
-	hideInfo(".dateinfo .up",".detailinfo");
-	hideInfo(".dutyrule .up",".dutyrule .content");
+	// hideInfo(".dateinfo .up",".detailinfo");
+	// hideInfo(".dutyrule .up",".dutyrule .content");
 	// changenavMenu();
-	tooltipToggle();
+	// tooltipToggle();
 }
 // 导航栏的效果
 function menuActive(target) {

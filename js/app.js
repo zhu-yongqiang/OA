@@ -3,7 +3,7 @@
 */
 'use strict'
 
-var myApp = angular.module('myApp', ['ui.router','myApp.controller']);
+var myApp = angular.module('myApp', ['ui.router','myApp.controllers','myApp.directives']);
 myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider) {
     $urlRouterProvider.otherwise('/console');
     $stateProvider
@@ -21,7 +21,8 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     			templateUrl : 'tpl/duty/console.html'
     		},
     		'dutyboardleft@console' : {
-    			templateUrl : 'tpl/duty/dutyboardleft.html',
+    			// templateUrl : 'tpl/duty/dutyboardleft.html',
+                template: '<dutyboardleft></dutyboardleft>',
                 controller: "consoleleftCtrl"
     		},
             'dutyboardright@console' : {

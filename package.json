@@ -1,0 +1,25 @@
+{
+  "name": "onlineoa",
+  "version": "1.0.0",
+  "description": "\"\"\u001b[D工大学子办公系统��\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DingWentao1234/OA.git"
+  },
+  "keywords": [
+    "oa"
+  ],
+  "author": "dingwentao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DingWentao1234/OA/issues"
+  },
+  "homepage": "https://github.com/DingWentao1234/OA#readme",
+  "dependencies": {
+    "puer": "^1.1.1"
+  }
+}
