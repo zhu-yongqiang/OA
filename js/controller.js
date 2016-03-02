@@ -35,7 +35,7 @@ angular.module('myApp.controllers', ['ngAnimate'])
 			$scope.nextturn = data;
 		}).error(function(data,status,headers,config){
 			$scope.nextturn = {
-				next:"加载出了点问题呦...",
+				next:"出了问题...",
 				number: "反正不是110",
 				qq: "刷新页面吧"
 			}

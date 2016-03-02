@@ -14,9 +14,9 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     			templateUrl: 'tpl/duty/duty.html',
                 // controller: ''
     		},
-    		'leftmenu@console' : {
-    			templateUrl: 'tpl/leftnav.html'
-    		},
+    		// 'leftmenu@console' : {
+    		// 	templateUrl: 'tpl/leftnav.html'
+    		// },
     		'console@console' : {
     			templateUrl : 'tpl/duty/console.html'
     		},
@@ -27,6 +27,7 @@ myApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$url
     		},
             'dutyboardright@console' : {
                 // templateUrl : 'tpl/duty/dutyboardright.html'
+                template: '<dutyboardright></dutyboardright>'
             }
     	}
     })
